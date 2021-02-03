@@ -33,6 +33,7 @@
   --basic-grey-disabled: #6a6a6a;
   --basic-blue-hover: #669EC0;
   --basic-blue-active: #5496BD;
+  --basic-grey-border: #e5e5e5;
 }
 
 /* Global */
@@ -46,8 +47,9 @@
   text-transform: uppercase;
   background-color: var(--basic-white);
 
-  min-width: 100%;
   min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -66,14 +68,6 @@
 
 .main-header-logo {
   justify-self: center;
-}
-
-/* Container */
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 40px;
 }
 
 /* Site navigation */
@@ -142,11 +136,11 @@
 }
 
 .features-item {
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .features-item-second {
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .features-city,
@@ -228,6 +222,7 @@
 
 .button-search {
   justify-self: center;
+  padding: 30px 124px 30px 125px;
 }
 
 /* Map */
@@ -277,6 +272,8 @@
 .filter {
   background: url("../img/blurred-background.jpg") var(--basic-white) repeat;
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .filters-title {
@@ -286,6 +283,7 @@
 
 .filter ul {
   list-style: none;
+  padding: 0;
 }
 
 .filter-input-text {
@@ -306,11 +304,46 @@
   color: var(--basic-grey-disabled);
 }
 
+.filter fieldset {
+  border: none;
+}
+
+.filters-infrastructure,
+.filters-housing {
+  margin-top: 27px;
+}
+
+.filters-infrastructure li,
+.filters-housing li {
+  padding-bottom: 23px;
+}
+
+.filters-infrastructure li:last-child,
+.filters-housing li:last-child {
+  padding-bottom: 0;
+}
+
 /* Sort */
 
 .section-sort {
   font-size: 12px;
   line-height: 18px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content 1fr;
+  column-gap: 10px;
+}
+
+.sort-selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+}
+
+.sort-triangles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+  justify-self: end;
 }
 
 .section-sort ul {
@@ -321,6 +354,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 /* Hotel list */
@@ -329,6 +363,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 24px 0 0 0;
 }
 
 .hotel-list-title:hover {
@@ -346,6 +381,51 @@
 
 .hotel-rating {
   background-color: var(--basic-background-white);
+  padding: 3px 12px 3px 15px;
+}
+
+.hotel-unlist {
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel,
+.motel,
+.apartments {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-template-rows: min-content;
+  column-gap: 30px;
+  border-top: 1px solid var(--basic-grey-border);
+}
+
+
+.hotel-list-item-buttons {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 6px;
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 6px;
+  padding: 0;
+  margin: 30px 0 47px 0;
+}
+
+.hotel-list-image {
+  padding: 30px 0;
+}
+
+.overall-rating {
+  justify-self: end;
+}
+
+.apartments {
+  border-bottom: 1px solid var(--basic-grey-border);
 }
 
 /* Buttons */
@@ -429,6 +509,7 @@
 
 .button-reserve {
   background-color: var(--basic-brown);
+  padding: 3px 17px 3px 16px;
 }
 
 .button-reserve:hover {
@@ -438,6 +519,10 @@
 .button-reserve:active {
   background-color: var(--basic-brown-active);
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-details {
+  padding: 3px 16px 3px 17px;
 }
 
 .button-details:hover {

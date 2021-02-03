@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
@@ -33,12 +33,12 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page-catalog">
     <h1>Каталог гостиниц</h1>
     <section class="filters">
       <h2>Фильтр гостиниц</h2>
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filters-infrastructure">
           <legend class="filters-title">Инфраструктура:</legend>
           <ul>
             <li>
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters-housing">
           <legend class="filters-title">Тип жилья:</legend>
           <ul>
             <li>
@@ -72,7 +72,7 @@
             </li>
           </ul>
         </fieldset>
-        <div>
+        <div class="filters-cost">
           <p class="filters-title">Стоимость в сутки (р):</p>
           <label><input class="filter-input-text" type="text" placeholder="от 0"></label>
           <label><input class="filter-input-text" type="text" placeholder="до 3000"></label>
@@ -84,12 +84,12 @@
     <section class="section-sort">
       <h2 class="sort-title">Найдено: 3</h2>
       <p>Сортировка:</p>
-      <ul>
+      <ul class="sort-selection">
         <li><a class="sort-button sort-button-current" href="">По цене</a></li>
         <li><a class="sort-button" href="">По типу</a></li>
         <li><a class="sort-button" href="">По рейтингу</a></li>
       </ul>
-      <ul>
+      <ul class=sort-triangles>
         <li><a href=""><img src="https://via.placeholder.com/11x10" alt="Треугольник смотрящий острым углом вверх"></a>
         </li>
         <li><a href=""><img src="https://via.placeholder.com/11x10" alt="Треугольник смотрящий острым углом вниз"></a>
@@ -98,79 +98,93 @@
     </section>
     <section class="hotel-list">
       <h2>Список гостиниц</h2>
-      <ul>
-        <li>
-          <img src="img/amara-resort.jpg" width="135" height="90" alt="Фотография гостиницы «Amara Resort & Spa»">
-          <div>
+      <ul class="hotel-unlist">
+        <li class="hotel">
+          <img class="hotel-list-image" src="img/amara-resort.jpg" width="135" height="90"
+            alt="Фотография гостиницы «Amara Resort & Spa»">
+          <div class="hotel-list-item">
             <h3 class="hotel-list-title">Amara Resort & Spa</h3>
-            <div>
-              <p>Гостиница</p>
-              <a class="button button-details" href="">Подробнее</a>
-            </div>
-            <div>
-              <p>От 4000 р.</p>
-              <a class="button button-reserve" href="">Забронировать</a>
+            <div class="hotel-list-item-buttons">
+              <div>
+                <p>Гостиница</p>
+                <a class="button button-details" href="">Подробнее</a>
+              </div>
+              <div>
+                <p>От 4000 р.</p>
+                <a class="button button-reserve" href="">Забронировать</a>
+              </div>
             </div>
           </div>
-          <ul>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-          </ul>
-          <span class="hotel-rating">Рейтинг:8,5</span>
+          <div class="overall-rating">
+            <ul class="stars">
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+            </ul>
+            <span class="hotel-rating">Рейтинг: 8,5</span>
+          </div>
         </li>
-        <li>
-          <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фотография мотеля «Desert Quail Inn»">
-          <div>
+        <li class="motel">
+          <img class="hotel-list-image" src="img/desert-quail-inn.jpg" width="135" height="90"
+            alt="Фотография мотеля «Desert Quail Inn»">
+          <div class="hotel-list-item">
             <h3 class="hotel-list-title">Desert Quail Inn</h3>
-            <div>
-              <p>Мотель</p>
-              <a class="button button-details" href="">Подробнее</a>
-            </div>
-            <div>
-              <p>От 3000 р.</p>
-              <a class="button button-reserve" href="">Забронировать</a>
+            <div class="hotel-list-item-buttons">
+              <div>
+                <p>Мотель</p>
+                <a class="button button-details" href="">Подробнее</a>
+              </div>
+              <div>
+                <p>От 3000 р.</p>
+                <a class="button button-reserve" href="">Забронировать</a>
+              </div>
             </div>
           </div>
-          <ul>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-          </ul>
-          <span class="hotel-rating">Рейтинг:8,9</span>
+          <div class="overall-rating">
+            <ul class="stars">
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+            </ul>
+            <span class="hotel-rating">Рейтинг: 8,9</span>
+          </div>
         </li>
-        <li>
-          <img src="img/villas-at-poco-diablo.jpg" width="135" height="90"
+        <li class="apartments">
+          <img class="hotel-list-image" src="img/villas-at-poco-diablo.jpg" width="135" height="90"
             alt="Фотография апартаментов «Villas at Poco Diablo»">
-          <div>
+          <div class="hotel-list-item">
             <h3 class="hotel-list-title">Villas at Poco Diablo</h3>
-            <div>
-              <p>Апартаменты</p>
-              <a class="button button-details" href="">Подробнее</a>
-            </div>
-            <div>
-              <p>От 2000 р.</p>
-              <a class="button button-reserve" href="">Забронировать</a>
+            <div class="hotel-list-item-buttons">
+              <div>
+                <p>Апартаменты</p>
+                <a class="button button-details" href="">Подробнее</a>
+              </div>
+              <div>
+                <p>От 2000 р.</p>
+                <a class="button button-reserve" href="">Забронировать</a>
+              </div>
             </div>
           </div>
-          <ul>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-            <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
-          </ul>
-          <span class="hotel-rating">Рейтинг:9,2</span>
+          <div class="overall-rating">
+            <ul class="stars">
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+              <li><a><img src="https://via.placeholder.com/19x17" alt="Инока звезды"></a></li>
+            </ul>
+            <span class="hotel-rating">Рейтинг: 9,2</span>
+          </div>
         </li>
       </ul>
     </section>
   </main>
 
-  <footer class="main-footer">
-    <h2>Контактные данные</h2>
+  <footer class="main-footer page-footer">
+    <!-- <h2>Контактные данные</h2>-->
     <p class="footer-contacts">
       #VISITSEDONA<br>
       Тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
     </p>
-    <h2>Социальные сети</h2>
+    <!-- <h2>Социальные сети</h2> -->
     <ul class="footer-social">
       <li>
         <a class="social-icon" href="">Твиттер</a>
