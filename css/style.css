@@ -343,22 +343,22 @@
 .section-sort {
   font-size: 12px;
   line-height: 18px;
-  display: grid;
-  grid-template-columns: max-content max-content max-content 1fr;
-  column-gap: 10px;
+  display: flex;
+  align-items: center;
 }
+
 
 .sort-selection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 32px;
+  margin-right: 503px;
 }
 
 .sort-triangles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 12px;
-  justify-self: end;
 }
 
 .section-sort ul {
@@ -369,7 +369,9 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  margin-right: 46px;
 }
 
 /* Hotel list */
@@ -409,34 +411,34 @@
 .hotel,
 .motel,
 .apartments {
-  display: grid;
-  grid-template-columns: max-content max-content 1fr;
-  grid-template-rows: min-content;
-  column-gap: 30px;
+  display: flex;
   border-top: 1px solid var(--basic-grey-border);
 }
-
 
 .hotel-list-item-buttons {
   display: grid;
   grid-template-columns: max-content max-content;
   column-gap: 6px;
+  margin-right: 543px;
 }
 
 .stars {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 6px;
+  display: flex;
+  justify-content: flex-end;
   padding: 0;
   margin: 30px 0 47px 0;
 }
 
-.hotel-list-image {
-  padding: 30px 0;
+.stars li {
+  margin-right: 6px;
 }
 
-.overall-rating {
-  justify-self: end;
+.stars li:last-child {
+  margin-right: 0;
+}
+
+.hotel-list-image {
+  padding: 30px 29px 30px 0;
 }
 
 .apartments {
