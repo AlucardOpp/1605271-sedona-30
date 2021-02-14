@@ -145,13 +145,13 @@
 /* Promo */
 
 .main-background {
-  width: 1200px;
+  width: 1202px;
   height: 509px;
   background-color: var(--basic-white);
   background-image: url("../img/welcome.png"), url("../img/background-photo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center;
-  vertical-align: bottom;
+  background-size: auto auto, 1202px auto;
 }
 
 .down-background {
