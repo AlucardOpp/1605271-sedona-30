@@ -12,7 +12,7 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a href="index.html" class="main-header-logo">
         <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города «Седона»">
       </a>
@@ -37,6 +37,8 @@
     <h1 class="visually-hidden">Каталог гостиниц</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <div class="filter-background">
+        <div class="container">
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="filters-infrastructure">
           <legend class="filters-title">Инфраструктура:</legend>
@@ -80,8 +82,10 @@
           <button class="button button-show" type="submit">Показать</button>
         </div>
       </form>
+      </div>
+    </div>
     </section>
-    <section class="section-sort">
+    <section class="section-sort container">
       <h2 class="sort-title">Найдено: 3</h2>
       <p>Сортировка:</p>
       <ul class="sort-selection">
@@ -104,7 +108,7 @@
         </li>
       </ul>
     </section>
-    <section class="hotel-list">
+    <section class="hotel-list container">
       <h2 class="visually-hidden">Список гостиниц</h2>
       <ul class="hotel-unlist">
         <li class="hotel">
