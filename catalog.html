@@ -39,51 +39,71 @@
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <div class="filter-background">
         <div class="container">
-      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="filters-infrastructure">
-          <legend class="filters-title">Инфраструктура:</legend>
-          <ul>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-pool" name="pool" checked>
-              <label for="filter-pool">Бассейн</label>
-            </li>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-parking" name="parking">
-              <label for="filter-parking">Парковка</label>
-            </li>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-wifi" name="wifi">
-              <label for="filter-wifi">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filters-housing">
-          <legend class="filters-title">Тип жилья:</legend>
-          <ul>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-hotel" name="hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
-            </li>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-motel" name="motel" checked>
-              <label for="filter-motel">Мотель</label>
-            </li>
-            <li>
-              <input class="filter-input-checkbox" type="checkbox" id="filter-apartments" name="apartments" checked>
-              <label for="filter-apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="filters-cost">
-          <p class="filters-title">Стоимость в сутки (р):</p>
-          <label><input class="filter-input-text" type="text" placeholder="от 0"></label>
-          <label><input class="filter-input-text" type="text" placeholder="до 3000"></label>
-          <input type="range" min="0" max="3000" step="100" value="2500">
-          <button class="button button-show" type="submit">Показать</button>
+          <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="filters-infrastructure">
+              <legend class="filters-title">Инфраструктура:</legend>
+              <ul class="checkbox-list">
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-pool" name="pool"
+                    checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-parking"
+                    name="parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-wifi" name="wifi">
+                  <label for="filter-wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters-housing">
+              <legend class="filters-title">Тип жилья:</legend>
+              <ul class="checkbox-list">
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-hotel" name="hotel"
+                    checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-motel" name="motel"
+                    checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-apartments"
+                    name="apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters-cost">
+              <legend class="filters-title filters-title-cost">Стоимость в сутки (р):</legend>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input class="filter-input-text input-min-cost" name="min-price" type="number" placeholder="от 0">
+                  </label>
+                  <label class="max-price">
+                    <input class="filter-input-text input-max-cost" name="max-price" type="number"
+                      placeholder="до 3000">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 80%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style=""></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                </div>
+              </div>
+              <button class="button button-show" type="submit">Показать</button>
+            </fieldset>
+          </form>
         </div>
-      </form>
       </div>
-    </div>
     </section>
     <section class="section-sort container">
       <h2 class="sort-title">Найдено: 3</h2>
