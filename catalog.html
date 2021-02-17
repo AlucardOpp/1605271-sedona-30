@@ -107,12 +107,14 @@
     </section>
     <section class="section-sort container">
       <h2 class="sort-title">Найдено: 3</h2>
-      <p>Сортировка:</p>
-      <ul class="sort-selection">
-        <li><a class="sort-button sort-button-current" href="">По цене</a></li>
-        <li><a class="sort-button" href="">По типу</a></li>
-        <li><a class="sort-button" href="">По рейтингу</a></li>
-      </ul>
+      <div class="div-sort-selection">
+        <p>Сортировка:</p>
+        <ul class="sort-selection">
+          <li><a class="sort-button sort-button-current" href="">По цене</a></li>
+          <li><a class="sort-button" href="">По типу</a></li>
+          <li><a class="sort-button" href="">По рейтингу</a></li>
+        </ul>
+      </div>
       <ul class=sort-triangles>
         <li><a href="" class="triangle triangle-down"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +130,7 @@
         </li>
       </ul>
     </section>
-    <section class="hotel-list container">
+    <section class="hotel-list">
       <h2 class="visually-hidden">Список гостиниц</h2>
       <ul class="hotel-unlist">
         <li class="hotel">
@@ -256,12 +258,10 @@
   </main>
 
   <footer class="main-footer page-footer">
-    <h2 class="visually-hidden">Контактные данные</h2>
     <div class="footer-contacts">
       <p>#VISITSEDONA</p>
       <p>Тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
     </div>
-    <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social">
       <li>
         <a class="social-icon" href="">
@@ -292,8 +292,8 @@
         </a>
       </li>
     </ul>
-    <p class="footer-copyright">
-      Website by
+    <div class="footer-copyright">
+      <p>Website by</p>
       <a class="footer-copy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -301,7 +301,7 @@
             fill="#231F20" />
         </svg>
       </a>
-    </p>
+    </div>
   </footer>
 </body>
 
