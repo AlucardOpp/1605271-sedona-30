@@ -1018,6 +1018,12 @@
   cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+  width: 23px;
+  height: 24px;
+  background-image: url(../img/filter-button-hover.svg);
+}
+
 .range-controls .toggle-min {
   left: -1px;
 }
