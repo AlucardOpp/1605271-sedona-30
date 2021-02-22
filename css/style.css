@@ -889,6 +889,14 @@
   text-align: center;
 }
 
+.filter-input-checkbox:focus+label {
+  outline: 2px auto var(--basic-black);
+}
+
+.filter-input-checkbox:focus+label::before {
+  outline: inherit;
+}
+
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
