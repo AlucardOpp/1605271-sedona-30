@@ -127,11 +127,11 @@
       <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
       <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
-      <form class="form-hotel-search" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form-hotel-search form-open" action="https://echo.htmlacademy.ru" method="post">
         <div class="filling-info">
           <label class="label-arrival-date" for="search-arrival-date">Дата заезда:</label>
           <input class="input-arrival-date" id="search-arrival-date" type="text" name="arrival-date"
-            value="24 апреля 2017">
+            value="24 апреля 2017" required>
           <button aria-hidden="true" focusable="false" aria-label="Выбор даты заезда" class="arrival-calendar"
             type="button"><svg width="21" height="23" viewBox="0 0 21 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +145,7 @@
           </button>
           <label class="label-departure-date" for="search-departure-date">Дата выезда:</label>
           <input class="input-departure-date" id="search-departure-date" type="text" name="departure-date"
-            value="4 июля 2017">
+            value="4 июля 2017" required>
           <button aria-hidden="true" focusable="false" aria-label="Выбор даты выезда" class="departure-calendar"
             type="button"><svg width="21" height="23" viewBox="0 0 21 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -166,7 +166,7 @@
               </svg>
             </button>
             <input class="input-search-count-adult" id="search-adult-counter" type="text" name="adult-counter"
-              value="2">
+              value="2" required>
             <button aria-hidden="true" focusable="false" aria-label="Прибавляет одного взрослого" class="plus"
               type="button">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +185,7 @@
               </svg>
             </button>
             <input class="input-search-count-children" id="search-children-counter" type="text" name="children-counter"
-              value="0">
+              value="0" required>
             <button aria-hidden="true" focusable="false" aria-label="Прибавляет одного ребёнка" class="plus"
               type="button">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +255,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

@@ -432,6 +432,7 @@
   justify-self: center;
   height: 86px;
   width: 568px;
+  z-index: 1;
 }
 
 /* Form */
@@ -446,6 +447,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.form-close {
+  animation-name: departure-close;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.form-open {
+  animation-name: departure-open;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 .search-item {
@@ -1333,4 +1350,34 @@
 .button-find:active {
   background-color: var(--basic-blue-active);
   color: rgba(255, 255, 255, 0.3);
+}
+
+/* Animations */
+
+@keyframes departure-close {
+  0% {
+    bottom: -395px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: -309px;
+    opacity: 0;
+  }
+}
+
+@keyframes departure-open {
+  0% {
+    bottom: -225px;
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+
+  100% {
+    bottom: -395px;
+    opacity: 1;
+  }
 }
