@@ -716,6 +716,7 @@
 .map {
   margin-bottom: -126px;
   background-color: var(--basic-white);
+  border: none;
 }
 
 /* Footer */
@@ -730,6 +731,7 @@
   column-gap: 36px;
   padding-left: 72px;
   padding-right: 72px;
+  z-index: 1;
 }
 
 /* Footer contacts */
@@ -1363,6 +1365,7 @@
   100% {
     bottom: -309px;
     opacity: 0;
+    visibility: hidden;
   }
 }
 
