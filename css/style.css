@@ -1188,6 +1188,7 @@
   border-top: 1px solid var(--basic-grey-border);
 }
 
+
 .hotel-list-item-buttons {
   display: -ms-grid;
   display: grid;
@@ -1197,11 +1198,16 @@
   grid-template-columns: max-content max-content;
   -moz-column-gap: 6px;
   column-gap: 6px;
+  margin-bottom: 29px;
 }
 
 .overall-rating {
   margin-left: auto;
   margin-right: 77.5px;
+}
+
+.hotel-rating {
+  white-space: nowrap;
 }
 
 .stars {
