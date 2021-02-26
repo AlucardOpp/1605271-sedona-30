@@ -506,12 +506,12 @@
   margin-top: 55px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (115px)[4];
-  grid-template-columns: repeat(4, 115px);
+  -ms-grid-columns: 112.5px 114.5px 116.5px 114.5px;
+  grid-template-columns: 112.5px 114.5px 116.5px 114.5px;
   -ms-grid-rows: 38px 30px 38px 30px 38px;
   grid-template-rows: repeat(3, 38px);
   row-gap: 30px;
-  width: 460px;
+  width: 458px;
   height: 175px;
   align-items: center;
 }
@@ -624,6 +624,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding-right: 9px;
 }
 
 .departure-calendar {
@@ -642,6 +643,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding-right: 9px;
 }
 
 .div-search-adult-counter {
@@ -711,7 +713,7 @@
 
 .input-arrival-date,
 .input-departure-date {
-  padding: 6px 0 6px 13px;
+  padding: 8px 0 9px 13px;
 }
 
 .form-hotel-search input {
@@ -731,7 +733,7 @@
 .input-search-count-adult,
 .input-search-count-children {
   text-align: center;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 
 .label-search-children-counter {
