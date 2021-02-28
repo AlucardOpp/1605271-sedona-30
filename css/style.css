@@ -21,6 +21,8 @@
 :root {
   --basic-black: #000000;
   --basic-white: #ffffff;
+  --basic-transparent-white: rgba(255, 255, 255, 0.3);
+  --basic-transparent-white-footer: rgba(255, 255, 255, 0.9);
   --basic-blue: #81B3D2;
   --basic-sub-black: #333333;
   --basic-grey: #a9a9a9;
@@ -742,7 +744,7 @@
   display: grid;
   -ms-grid-columns: 328px 36px 328px 36px 328px;
   grid-template-columns: repeat(3, 328px);
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--basic-transparent-white-footer);
   -moz-column-gap: 36px;
   column-gap: 36px;
   padding-left: 72px;
@@ -1048,7 +1050,7 @@
 
 .range-controls .scale {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-transparent-white);
 }
 
 .range-controls .bar {
@@ -1288,7 +1290,7 @@
 
 .button-search:active {
   background-color: var(--basic-brown-active);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-transparent-white);
 }
 
 /* Hotel search button */
@@ -1361,7 +1363,7 @@
 
 .button-reserve:active {
   background-color: var(--basic-brown-active);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-transparent-white);
 }
 
 .button-details {
@@ -1376,7 +1378,7 @@
 .button-details:active,
 .button-find:active {
   background-color: var(--basic-blue-active);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-transparent-white);
 }
 
 
