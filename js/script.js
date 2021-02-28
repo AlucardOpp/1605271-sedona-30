@@ -23,6 +23,9 @@ if (adults || childrens) {
 }
 
 buttonSearch.addEventListener("click", function () {
+  if (formHotelSearch.classList.contains("form-insta-close")) {
+    formHotelSearch.classList.remove("form-insta-close");
+  }
   formHotelSearch.classList.toggle("form-close");
   formHotelSearch.classList.toggle("form-open");
 });

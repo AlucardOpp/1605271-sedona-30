@@ -481,6 +481,10 @@
   animation-direction: alternate;
 }
 
+.form-insta-close {
+  display: none;
+}
+
 .search-item {
   margin: 0;
   padding: 0;
